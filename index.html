@@ -1,5 +1,7 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -10,12 +12,14 @@
 <style>
 
 body{
-font-family: Arial, sans-serif;
+font-family:Arial;
 margin:0;
 background:#0f172a;
 color:white;
 scroll-behavior:smooth;
 }
+
+/* NAVIGATION */
 
 nav{
 background:#020617;
@@ -35,6 +39,8 @@ font-weight:bold;
 nav a:hover{
 color:#38bdf8;
 }
+
+/* HEADER */
 
 header{
 text-align:center;
@@ -72,6 +78,8 @@ border-radius:6px;
 text-decoration:none;
 }
 
+/* SECTIONS */
+
 section{
 padding:60px 20px;
 max-width:1000px;
@@ -82,6 +90,8 @@ h2{
 border-left:5px solid #38bdf8;
 padding-left:10px;
 }
+
+/* SKILLS */
 
 .skills{
 display:grid;
@@ -102,24 +112,63 @@ transform:scale(1.05);
 background:#334155;
 }
 
+/* PROJECTS */
+
 .projects{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-margin-top:20px;
+grid-template-columns:repeat(2, 1fr);
+gap:25px;
+margin-top:25px;
+}
+
+.project-link{
+text-decoration:none;
+color:white;
 }
 
 .card{
 background:#1e293b;
-padding:20px;
+padding:25px;
 border-radius:10px;
+height:220px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-8px);
 background:#334155;
 }
+
+.card h3{
+margin:0;
+font-size:20px;
+}
+
+.card p{
+font-size:14px;
+margin-top:10px;
+flex-grow:1;
+}
+
+.card button{
+margin-top:15px;
+padding:10px;
+background:#38bdf8;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+width:140px;
+}
+
+.card button:hover{
+background:#0ea5e9;
+}
+
+/* BLOCK SECTIONS */
 
 .block{
 background:#1e293b;
@@ -127,6 +176,8 @@ padding:20px;
 border-radius:10px;
 margin-top:20px;
 }
+
+/* FOOTER */
 
 footer{
 background:#020617;
@@ -141,6 +192,8 @@ margin-top:40px;
 
 <body>
 
+<!-- NAVBAR -->
+
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
@@ -149,6 +202,9 @@ margin-top:40px;
 <a href="#certifications">Certifications</a>
 <a href="#languages">Languages</a>
 </nav>
+
+
+<!-- HEADER -->
 
 <header>
 
@@ -180,18 +236,24 @@ Download Resume
 
 </header>
 
+
+<!-- ABOUT -->
+
 <section id="about">
 
 <h2>Career Objective</h2>
 
 <p>
-Aspiring Data Analyst skilled in Excel, SQL, Power BI, and Python for data analysis and visualization.
+Aspiring Data Analyst with strong skills in Excel, SQL, Power BI, and Python for data analysis and visualization.
 Experienced in building dashboards, performing exploratory data analysis, and extracting business insights
-from structured datasets. Seeking an entry-level Data Analyst or MIS Executive role to support data-driven
-decision making.
+from structured datasets. Seeking an entry-level Data Analyst or MIS Executive role to support
+data-driven decision making.
 </p>
 
 </section>
+
+
+<!-- SKILLS -->
 
 <section id="skills">
 
@@ -200,23 +262,23 @@ decision making.
 <div class="skills">
 
 <div class="skill">
-<b>Data Analysis</b><br>
-Excel (Pivot Tables, LOOKUP, Formulas)
+<b>Excel</b><br>
+Pivot Tables, LOOKUP, Conditional Formulas
 </div>
 
 <div class="skill">
-<b>Visualization</b><br>
-Power BI, Excel Dashboards
+<b>Power BI</b><br>
+Data Visualization, Dashboards
 </div>
 
 <div class="skill">
-<b>Programming</b><br>
-Python, SQL
-</div>
-
-<div class="skill">
-<b>Python Libraries</b><br>
+<b>Python</b><br>
 Pandas, NumPy, Matplotlib
+</div>
+
+<div class="skill">
+<b>SQL</b><br>
+Joins, Aggregation, Filtering
 </div>
 
 <div class="skill">
@@ -238,11 +300,16 @@ Communication, Problem Solving
 
 </section>
 
+
+<!-- PROJECTS -->
+
 <section id="projects">
 
 <h2>Projects</h2>
 
 <div class="projects">
+
+<a href="https://github.com/Omkar2304/Excel-Hospital-Emergency-Room-Dashboard" target="_blank" class="project-link">
 
 <div class="card">
 
@@ -250,10 +317,17 @@ Communication, Problem Solving
 
 <p>
 Analyzed hospital emergency room dataset using Excel Pivot Tables and charts.
-Tracked patient volume, wait times, and admission trends to identify operational bottlenecks.
+Tracked patient volume, wait times, and admission trends.
 </p>
 
+<button>View Project</button>
+
 </div>
+
+</a>
+
+
+<a href="https://github.com/Omkar2304/Excel--Sales-Profit-Dashboard" target="_blank" class="project-link">
 
 <div class="card">
 
@@ -261,36 +335,54 @@ Tracked patient volume, wait times, and admission trends to identify operational
 
 <p>
 Analyzed retail sales dataset to evaluate revenue trends and regional performance.
-Identified top performing products and high revenue regions.
 </p>
 
+<button>View Project</button>
+
 </div>
+
+</a>
+
+
+<a href="https://github.com/Omkar2304/PowerBI--Amazon-Sales-Analysis" target="_blank" class="project-link">
 
 <div class="card">
 
 <h3>Amazon Sales Analysis Dashboard</h3>
 
 <p>
-Cleaned e-commerce dataset using Power Query and built Power BI dashboards
-to analyze product categories and order distribution.
+Built Power BI dashboard analyzing product categories and sales trends.
 </p>
 
+<button>View Project</button>
+
 </div>
+
+</a>
+
+
+<a href="https://github.com/Omkar2304/SQL--Zudio-Sales-Analysis" target="_blank" class="project-link">
 
 <div class="card">
 
 <h3>Zudio Sales Analysis (SQL)</h3>
 
 <p>
-Performed retail sales analysis using SQL queries including JOIN, GROUP BY,
-and aggregation to analyze product performance and revenue trends.
+Used SQL queries including JOIN and GROUP BY to analyze revenue trends.
 </p>
 
+<button>View Project</button>
+
 </div>
+
+</a>
 
 </div>
 
 </section>
+
+
+<!-- EDUCATION -->
 
 <section id="education">
 
@@ -298,21 +390,23 @@ and aggregation to analyze product performance and revenue trends.
 
 <div class="block">
 
-<b>Bachelor of Engineering – Computer Engineering</b><br>
+<b>B.E Computer Engineering</b><br>
 St. John College of Engineering and Management, Palghar<br>
 Aug 2022 – May 2026<br>
-<b>CGPA: 9.1</b>
+GPA: <b>9.1</b>
 
 <br><br>
 
 <b>HSC</b><br>
 A.L.C Junior College of Arts and Science, Wada<br>
-Aug 2020 – Jun 2022<br>
-60%
+Marks: 60%
 
 </div>
 
 </section>
+
+
+<!-- CERTIFICATIONS -->
 
 <section id="certifications">
 
@@ -322,7 +416,7 @@ Aug 2020 – Jun 2022<br>
 
 <ul>
 <li>Data Analyst Foundations – Udemy</li>
-<li>Microsoft Excel Masterclass – Udemy</li>
+<li>Excel Masterclass – Udemy</li>
 <li>Power BI Micro Course</li>
 <li>30 Days SQL Micro Course</li>
 <li>Python for Data Analysis – Udemy</li>
@@ -331,6 +425,9 @@ Aug 2020 – Jun 2022<br>
 </div>
 
 </section>
+
+
+<!-- LANGUAGES -->
 
 <section id="languages">
 
@@ -348,11 +445,16 @@ Aug 2020 – Jun 2022<br>
 
 </section>
 
+
+<!-- FOOTER -->
+
 <footer>
 
 <p>© 2026 Omkar Chafekar | Data Analyst Portfolio</p>
 
 </footer>
 
+
 </body>
 </html>
+```
