@@ -3,14 +3,14 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Omkar Chafekar | Data Analyst</title>
 
 <style>
 
 body{
-font-family:Arial;
+font-family: Arial, sans-serif;
 margin:0;
 background:#0f172a;
 color:white;
@@ -32,14 +32,18 @@ text-decoration:none;
 font-weight:bold;
 }
 
+nav a:hover{
+color:#38bdf8;
+}
+
 header{
 text-align:center;
-padding:70px 20px;
-background:linear-gradient(135deg,#2563eb,#1e40af);
+padding:80px 20px;
+background:linear-gradient(135deg,#2563eb,#1e3a8a);
 }
 
 header h1{
-font-size:40px;
+font-size:42px;
 margin-bottom:10px;
 }
 
@@ -47,18 +51,29 @@ header p{
 font-size:18px;
 }
 
-button{
+.contact a{
+color:#38bdf8;
+text-decoration:none;
+margin:5px;
+}
+
+.contact a:hover{
+text-decoration:underline;
+}
+
+.button{
+display:inline-block;
 margin-top:20px;
 padding:12px 25px;
-border:none;
 background:#38bdf8;
+color:black;
+font-weight:bold;
 border-radius:6px;
-font-size:16px;
-cursor:pointer;
+text-decoration:none;
 }
 
 section{
-padding:60px;
+padding:60px 20px;
 max-width:1000px;
 margin:auto;
 }
@@ -102,11 +117,11 @@ transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-8px);
+transform:translateY(-10px);
 background:#334155;
 }
 
-.education, .certifications, .languages{
+.block{
 background:#1e293b;
 padding:20px;
 border-radius:10px;
@@ -117,11 +132,7 @@ footer{
 background:#020617;
 text-align:center;
 padding:30px;
-}
-
-a{
-color:#38bdf8;
-text-decoration:none;
+margin-top:40px;
 }
 
 </style>
@@ -145,14 +156,27 @@ text-decoration:none;
 
 <p><b>Data Analyst</b> | Excel • SQL • Power BI • Python</p>
 
-<p>
-📞 +91 9322872779 |
-📧 chafekaromkar23@gmail.com |
-🔗 <a href="https://linkedin.com/in/omkar-chafekar">LinkedIn</a> |
-💻 <a href="https://github.com/Omkar2304">GitHub</a>
-</p>
+<div class="contact">
 
-<button onclick="downloadResume()">Download Resume</button>
+📞 <a href="tel:+919322872779">+91 9322872779</a> |
+
+📧 <a href="mailto:chafekaromkar23@gmail.com">
+chafekaromkar23@gmail.com
+</a> |
+
+🔗 <a href="https://www.linkedin.com/in/omkar-chafekar" target="_blank">
+LinkedIn
+</a> |
+
+💻 <a href="https://github.com/Omkar2304" target="_blank">
+GitHub
+</a>
+
+</div>
+
+<a class="button" href="Omkar_Chafekar_Resume.pdf" download>
+Download Resume
+</a>
 
 </header>
 
@@ -161,10 +185,10 @@ text-decoration:none;
 <h2>Career Objective</h2>
 
 <p>
-Aspiring Data Analyst with strong skills in Excel, SQL, Power BI, and Python for data analysis and visualization.
-Experienced in building interactive dashboards, performing exploratory data analysis, and extracting business insights
-from structured datasets. Seeking an entry-level Data Analyst or MIS Executive role to apply analytical thinking and
-data-driven decision-making to support business operations and strategic planning.
+Aspiring Data Analyst skilled in Excel, SQL, Power BI, and Python for data analysis and visualization.
+Experienced in building dashboards, performing exploratory data analysis, and extracting business insights
+from structured datasets. Seeking an entry-level Data Analyst or MIS Executive role to support data-driven
+decision making.
 </p>
 
 </section>
@@ -175,19 +199,40 @@ data-driven decision-making to support business operations and strategic plannin
 
 <div class="skills">
 
-<div class="skill"><b>Excel</b><br>Pivot Tables, LOOKUP, Conditional Formulas</div>
+<div class="skill">
+<b>Data Analysis</b><br>
+Excel (Pivot Tables, LOOKUP, Formulas)
+</div>
 
-<div class="skill"><b>Power BI</b><br>Dashboard & Data Visualization</div>
+<div class="skill">
+<b>Visualization</b><br>
+Power BI, Excel Dashboards
+</div>
 
-<div class="skill"><b>Python</b><br>Pandas, NumPy, Matplotlib</div>
+<div class="skill">
+<b>Programming</b><br>
+Python, SQL
+</div>
 
-<div class="skill"><b>SQL</b><br>Joins, Aggregations, Filtering</div>
+<div class="skill">
+<b>Python Libraries</b><br>
+Pandas, NumPy, Matplotlib
+</div>
 
-<div class="skill"><b>Databases</b><br>PostgreSQL, MySQL</div>
+<div class="skill">
+<b>Databases</b><br>
+PostgreSQL, MySQL
+</div>
 
-<div class="skill"><b>Tools</b><br>GitHub, VS Code</div>
+<div class="skill">
+<b>Tools</b><br>
+GitHub, VS Code
+</div>
 
-<div class="skill"><b>Soft Skills</b><br>Communication, Problem Solving</div>
+<div class="skill">
+<b>Soft Skills</b><br>
+Communication, Problem Solving
+</div>
 
 </div>
 
@@ -200,35 +245,47 @@ data-driven decision-making to support business operations and strategic plannin
 <div class="projects">
 
 <div class="card">
+
 <h3>Hospital Emergency Room Dashboard</h3>
+
 <p>
 Analyzed hospital emergency room dataset using Excel Pivot Tables and charts.
-Monitored patient volume, wait times, and admission trends.
+Tracked patient volume, wait times, and admission trends to identify operational bottlenecks.
 </p>
+
 </div>
 
 <div class="card">
-<h3>Sales & Profit Dashboard</h3>
+
+<h3>Sales and Profit Dashboard</h3>
+
 <p>
-Analyzed retail sales dataset to evaluate revenue trends, regional performance,
-and top-performing products.
+Analyzed retail sales dataset to evaluate revenue trends and regional performance.
+Identified top performing products and high revenue regions.
 </p>
+
 </div>
 
 <div class="card">
+
 <h3>Amazon Sales Analysis Dashboard</h3>
+
 <p>
-Cleaned and transformed e-commerce data using Power Query and built
-Power BI dashboards to analyze product categories and sales trends.
+Cleaned e-commerce dataset using Power Query and built Power BI dashboards
+to analyze product categories and order distribution.
 </p>
+
 </div>
 
 <div class="card">
+
 <h3>Zudio Sales Analysis (SQL)</h3>
+
 <p>
-Used SQL queries with JOIN, GROUP BY, and aggregation to analyze
-revenue trends and product performance.
+Performed retail sales analysis using SQL queries including JOIN, GROUP BY,
+and aggregation to analyze product performance and revenue trends.
 </p>
+
 </div>
 
 </div>
@@ -239,7 +296,7 @@ revenue trends and product performance.
 
 <h2>Education</h2>
 
-<div class="education">
+<div class="block">
 
 <b>Bachelor of Engineering – Computer Engineering</b><br>
 St. John College of Engineering and Management, Palghar<br>
@@ -248,7 +305,8 @@ Aug 2022 – May 2026<br>
 
 <br><br>
 
-<b>HSC – A.L.C Junior College of Arts and Science</b><br>
+<b>HSC</b><br>
+A.L.C Junior College of Arts and Science, Wada<br>
 Aug 2020 – Jun 2022<br>
 60%
 
@@ -260,13 +318,13 @@ Aug 2020 – Jun 2022<br>
 
 <h2>Certifications</h2>
 
-<div class="certifications">
+<div class="block">
 
 <ul>
-<li>Data Analyst Foundations Course – Udemy</li>
+<li>Data Analyst Foundations – Udemy</li>
 <li>Microsoft Excel Masterclass – Udemy</li>
 <li>Power BI Micro Course</li>
-<li>30-Days SQL Micro Course</li>
+<li>30 Days SQL Micro Course</li>
 <li>Python for Data Analysis – Udemy</li>
 </ul>
 
@@ -278,11 +336,11 @@ Aug 2020 – Jun 2022<br>
 
 <h2>Languages</h2>
 
-<div class="languages">
+<div class="block">
 
 <ul>
 <li>English – Professional Proficiency</li>
-<li>Hindi – Native or Bilingual</li>
+<li>Hindi – Native / Bilingual</li>
 <li>Marathi – Native</li>
 </ul>
 
@@ -295,14 +353,6 @@ Aug 2020 – Jun 2022<br>
 <p>© 2026 Omkar Chafekar | Data Analyst Portfolio</p>
 
 </footer>
-
-<script>
-
-function downloadResume(){
-window.location.href="Omkar_Chafekar_Resume.pdf";
-}
-
-</script>
 
 </body>
 </html>
